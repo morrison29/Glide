@@ -7,11 +7,53 @@ header{
     background-color: #FFFEFF;
     display: flex;
     justify-content: space-between;
-
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
 }
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Asap Sharp", sans-serif;  
+}
+
+body{
+    font-family:  sans-serif;
+}
+
+
 ul{
     display: flex;
     list-style-type: none;
     gap: 15px;
 }
  
+li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 450;
+}
+.transbtn{
+    border-radius: 20px;
+    border :0;
+    background-color: inherit;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.btncontainer{
+    display: flex;
+    gap: 25px;
+}
+.startbtn{
+    padding: 10px;
+    border-radius: 20px;
+    border :0;
+    background-color: #171715;
+    color: #fff;
+    font-weight: 550;
+}
