@@ -57,3 +57,31 @@ li a{
     color: #fff;
     font-weight: 550;
 }
+main{
+    margin-top: 76px;
+    
+}
+.hero{
+    display: flex;
+    padding: 0 20px;
+    
+}
+
+.hero > div{
+    width: 50%;
+}
+#right > img{
+    width: 100%;
+    border-top-right-radius: 15,px;
+    border-bottom-right-radius: 15px;
+}
+#left{
+    background-color: #F5f5f2;
+    display: flex;
+    align-items: center;
+}
+#left > div{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
