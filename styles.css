@@ -12,7 +12,7 @@ header {
   background-color: #fffeff;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,8 +29,20 @@ ul {
 .logo {
   font-size: 30px;
   font-weight: bold;
-  font-family: "Yarndings 12", system-ui;
+  font-family: "Agrave Pro", cursive;
+  padding: 10px;
+  border-radius: 30px;
+  transition-property: background-color;
+  transition-duration: 300ms;
+
 }
+.logo:hover{
+  background-color: #ebebe8;
+
+}
+
+
+
 
 li a {
   text-decoration: none;
@@ -38,16 +50,47 @@ li a {
   text-transform: capitalize;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  font-weight: 600;
-}
+  font-weight: 600; 
+  padding: 10px;
+  border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 300ms;  
+  cursor: pointer;
 
+}
+li a:hover{
+  background-color: #ebebe8;
+
+}
+li a:focus-visible {
+  outline: 3px solid #ebebe8;
+
+}
+i{
+  padding-right: 20px;
+  padding-left: 10px;
+  border-radius: 20px;
+}
+.fa-solid:hover{
+  background-color: #ebebe8;
+
+}
 .trans-btn {
   border: 0;
   background-color: inherit;
   font-weight: 550;
   text-transform: capitalize;
-}
+  padding: 10px;
+  border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  cursor: pointer;
 
+}
+.trans-btn:hover{
+  background-color: #ebebe8;
+
+}
 .btn-container {
   display: flex;
   gap: 25px;
@@ -65,8 +108,19 @@ li a {
   color: white;
   border: 0;
   font-weight: 550;
-}
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  
 
+}
+.black-btn:hover{
+  opacity: 0.8  ;
+  
+  }
+button:focus{
+  border: 1px solid black;
+}
 main {
   margin-top: 76px;
 }
@@ -138,4 +192,35 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 20px;
+}
+
+@media(max-width:1023px){
+  .hero{
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero>div{
+    width: 100%;
+  }
+  main{
+    margin-top: 120px;
+  }
+  ul{
+    display: none;
+  }
+  #left{
+    background-color: white;
+  }
+  .contact-btn{
+    display: none;
+  }
+}
+
+@media(max-width:767px){
+  #left>div{
+    margin-left: 2px;
+  }
+  .logo{
+    font-size: 1.5rem;
+  }
 }
